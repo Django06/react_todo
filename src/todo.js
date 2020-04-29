@@ -23,7 +23,7 @@ export default function Todo(props) {
         className="btn btn-primary ml-2"
         onClick={onAddTodo}
       >
-        Add
+        Add new
       </button>
     </div>
   );
