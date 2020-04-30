@@ -7,6 +7,9 @@ export default function Todo(props) {
       props.addTodo(todoInput);
       setTodoInput("");
     }
+    else{
+      alert("3emer asahby dik Input ! Malk akha dayer B7al haka !");
+    }
   };
   return (
     <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>

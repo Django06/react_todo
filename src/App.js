@@ -7,8 +7,15 @@ function App() {
   const [todo, setTodo] = useState(DATA_TODO);
   const addItem = (e) => {
     setTodo([...todo, e]);
+    console.log(todo);
+    
   };
-  const deleteItem = () => {};
+  const deleteItem = (esup) => {
+    console.log(esup);
+    
+    const filtredTod=todo.filter(e => e !== esup);
+    setTodo([...filtredTod]);
+  };
   return (
     <div className="App">
       <div className="alert alert-primary">My first Todo App</div>

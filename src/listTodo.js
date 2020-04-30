@@ -9,7 +9,7 @@ export default function ListTodo(props) {
       key={i}
     >
       {e}{" "}
-      <button type="button" className="btn btn-danger btn-sm">
+      <button type="button" className="btn btn-danger btn-sm" onClick={() => props.deleteTodo(e)}>
         delete
       </button>
     </li>
